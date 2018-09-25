@@ -1,0 +1,29 @@
+<style type="text/css">.abc {
+border-radius: 3px;
+border: 2px solid #1abc9c;
+color: #111;
+font-family: Consolas, Andale Mono, Monaco, Courier, Courier New, Verdana, sans-serif;
+font-size: 0.9em;
+height: 300px;
+line-height: 1.3em;
+margin: 0px;
+padding: 0px;
+width: 100%;
+}
+.def {
+background: #fff;
+border-radius: 2px;
+border: 2px solid #1abc9c;
+height: 720px;
+width: 100%;
+overflow: auto;
+}
+</style>
+
+<form method="post" name="form1"><textarea class="abc" name="code" onclick="focus(this.code)">&lt;style type="text/css"&gt; Kode CSS disini &lt;/style&gt;&lt;br /&gt;
+Kode HTML disini</textarea></form>
+<ul class="button">
+<li><button class="pejet" onclick="preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()">Preview</button></li>
+<li><button class="pejet" onclick="window.document.form1.code.value='';preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()">Clear</button></li>
+</ul>
+<iframe name="preview" class="def" src="" allowfullscreen="allowfullscreen"></iframe>
